@@ -40,7 +40,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:background="#E36C6C"
+                    android:background="#9D3CE3"
                     android:gravity="center"
                     android:text="@string/hello_world2"
                     android:textSize="50sp" />
@@ -49,7 +49,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:background="#E36C6C"
+                    android:background="#EA9B26"
                     android:gravity="center"
                     android:text="@string/hello_world2"
                     android:textSize="50sp" />
@@ -58,7 +58,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:background="#E36C6C"
+                    android:background="#5CEA3C"
                     android:gravity="center"
                     android:text="@string/hello_world2"
                     android:textSize="50sp"
@@ -98,10 +98,10 @@
         </ScrollView>
 
         <HorizontalScrollView
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:background="#E36C6C"
+                    android:background="#366EB1"
                     android:gravity="center"
                     android:text="@string/hello_world"
                     android:textSize="50sp" />
@@ -122,7 +122,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:background="#E36C6C"
+                    android:background="#48ED3C"
                     android:gravity="center"
                     android:text="@string/hello_world2"
                     android:textSize="50sp" />
@@ -131,7 +131,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:background="#E36C6C"
+                    android:background="#574AC8"
                     android:gravity="center"
                     android:text="@string/hello_world3"
                     android:textSize="50sp" />
@@ -167,7 +167,7 @@
 
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:background="#E36C6C"
+                    android:background="#369BC3"
                     android:gravity="center"
                     android:text="@string/hello_world2"
                     android:textSize="50sp" />
@@ -176,7 +176,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:background="#E36C6C"
+                    android:background="#731D93"
                     android:gravity="center"
                     android:text="@string/hello_world3"
                     android:textSize="50sp" />
@@ -184,7 +184,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:background="#E36C6C"
+                    android:background="#31BC3F"
                     android:gravity="center"
                     android:text="@string/hello_world"
                     android:textSize="50sp" />
@@ -200,7 +200,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:background="#E36C6C"
+                    android:background="#279145"
                     android:gravity="center"
                     android:text="@string/hello_world3"
                     android:textSize="50sp" />
@@ -208,7 +208,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:background="#E36C6C"
+                    android:background="#E73EED"
                     android:gravity="center"
                     android:text="@string/hello_world"
                     android:textSize="50sp" />
@@ -227,7 +227,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:background="#E36C6C"
+                    android:background="#5CC532"
                     android:gravity="center"
                     android:text="@string/hello_world3"
                     android:textSize="50sp" />
@@ -245,7 +245,7 @@
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
-                    android:background="#E36C6C"
+                    android:background="#8EC529"
                     android:gravity="center"
                     android:text="@string/hello_world2"
                     android:textSize="50sp" />
@@ -253,7 +253,7 @@
                 <TextView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:background="#E36C6C"
+                    android:background="#E61398"
                     android:gravity="center"
                     android:text="@string/hello_world3"
                     android:textSize="50sp" />

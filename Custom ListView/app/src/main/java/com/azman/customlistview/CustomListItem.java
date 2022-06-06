@@ -9,23 +9,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomBaseAdapater extends BaseAdapter
-{
+public class CustomListItem extends BaseAdapter {
     Context context;
-    String[] listIName;
-    int[] listIcons;
+    ListItem[] listItems;
     LayoutInflater inflater;
 
-    public CustomBaseAdapater(Context ctx, String[] listItems, int[] listIcons){
-    this.context = ctx;
-    this.listIName = listItems;
-    this.listIcons = listIcons;
-    this.inflater = LayoutInflater.from(ctx);
+    public CustomListItem(Context ctx, ListItem[] listItems) {
+        this.context = ctx;
+        this.listItems = listItems;
+        this.inflater = LayoutInflater.from(ctx);
     }
 
     @Override
     public int getCount() {
-        return listIName.length;
+        return listItems.length;
     }
 
     @Override
@@ -38,14 +35,15 @@ public class CustomBaseAdapater extends BaseAdapter
         return 0;
     }
 
-    @SuppressLint("ViewHolder")
+    @SuppressLint({"ViewHolder", "InflateParams"})
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflater.inflate(R.layout.activity_custom_list_view, null);
-        TextView textView = (TextView) view.findViewById(R.id.itemName);
-        ImageView imageView = (ImageView) view.findViewById(R.id.imageIcon);
-        textView.setText(listIName[i]);
-        imageView.setImageResource(listIcons[i]);
+        TextView textView = view.findViewById(R.id.itemName);
+        ImageView imageView = view.findViewById(R.id.imageIcon);
+        textView.setText(listItems[i].name);
+        imageView.setImageResource(listItems[i].iconId);
+
         return view;
     }
 }
