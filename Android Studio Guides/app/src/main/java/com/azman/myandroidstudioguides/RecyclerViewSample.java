@@ -35,6 +35,31 @@ public class RecyclerViewSample extends AppCompatActivity {
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
                 R.drawable.ic_launcher_background));
 
+        items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
+                R.drawable.ic_launcher_background));
+
         // create adapter
         recyclerAdapterManager = new RecyclerAdapterManager(items, this);
 

@@ -6,6 +6,8 @@ import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,6 +46,9 @@ public class RecyclerAdapterManager extends RecyclerView.Adapter<RecyclerAdapter
     public void onBindViewHolder(@NonNull ItemViewHolder holder, @SuppressLint("RecyclerView") int position) {
         // onBindViewHolder this method is also a method in which we will specify
         // what should be done when the design is created and then connected to recycler view.
+
+        Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
+        holder.itemView.startAnimation(animation);
 
         // transfer the data in array to the components.
         holder.textTitle.setText(items.get(position).title);
