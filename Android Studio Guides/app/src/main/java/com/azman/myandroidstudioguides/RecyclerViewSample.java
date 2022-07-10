@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
 
-public class RecyclerViewSample extends AppCompatActivity {
+public class RecyclerViewSample extends AppCompatActivity implements RecyclerAdapterManager.OnItemListener {
     RecyclerView recyclerView;
     RecyclerAdapterManager recyclerAdapterManager;
 
@@ -40,30 +41,54 @@ public class RecyclerViewSample extends AppCompatActivity {
                 R.drawable.ic_launcher_background));
         items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
-                R.drawable.ic_launcher_background));  items.add(new Item("item 3",
+                R.drawable.ic_launcher_background));
+        items.add(new Item("item 3",
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quia?",
                 R.drawable.ic_launcher_background));
 
         // create adapter
         recyclerAdapterManager = new RecyclerAdapterManager(items, this);
 
+
+
+
         // set adapter to view
         recyclerView.setAdapter(recyclerAdapterManager);
+    }
+
+    @Override
+    public void OnItemClick(int postition) {
+        items.get(postition)
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
     }
 }

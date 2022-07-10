@@ -14,6 +14,21 @@
         android:theme="@style/Theme.SundayPractice"
         tools:targetApi="31">
         <activity
+            android:name=".navigationdrawer.NavigationDrawerExample"
+            android:exported="false" />
+        <activity
+            android:name=".ButtomSheets"
+            android:exported="false" />
+        <activity
+            android:name=".ButtomNavigationWithFragments.ButtomNavigationExample"
+            android:exported="false" />
+        <activity
+            android:name=".tablayoutfile.TabLayoutMain"
+            android:exported="false" />
+        <activity
+            android:name=".FloatingActionButtonExample"
+            android:exported="false" />
+        <activity
             android:name=".ToolBarExample"
             android:exported="false" />
         <activity

@@ -12,12 +12,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
+import com.azman.sundaypractice.ButtomNavigationWithFragments.ButtomNavigationExample;
 import com.azman.sundaypractice.broadcast_receiver.BroadcastExample;
 import com.azman.sundaypractice.fragmenttest.BasicFragmentMain;
 import com.azman.sundaypractice.fragmenttest.fragment1;
 import com.azman.sundaypractice.fragmenttest.fragment2;
 import com.azman.sundaypractice.fragmenttest.fragment3;
+import com.azman.sundaypractice.navigationdrawer.NavigationDrawerExample;
 import com.azman.sundaypractice.services.ServicesLifeCycle;
+import com.azman.sundaypractice.tablayoutfile.TabLayoutMain;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         //        intentFilter.addAction(Intent.ACTION_AIRPLANE_MODE_CHANGED));
         this.registerReceiver(receiver, intentFilter);
 
-        startActivity(new Intent(MainActivity.this, OptionMenuExample.class));
+        startActivity(new Intent(MainActivity.this, NavigationDrawerExample.class));
 
     }
 

@@ -54,13 +54,15 @@ public class RecyclerAdapterManager extends RecyclerView.Adapter<RecyclerAdapter
         holder.textTitle.setText(items.get(position).title);
         holder.textDetail.setText(items.get(position).detail);
         holder.imageView.setImageResource(items.get(position).image);
-        holder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context, items.get(position).title, Toast.LENGTH_SHORT).show();
-            }
-        });
+
+//        holder.cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(context, items.get(position).title, Toast.LENGTH_SHORT).show();
+//            }
+//        });
     }
+
 
     @Override
     public int getItemCount() {
@@ -70,21 +72,34 @@ public class RecyclerAdapterManager extends RecyclerView.Adapter<RecyclerAdapter
 
     // Inner class, Purpose: Will represent the item design and we will define the components
     //
-    public class ItemViewHolder extends RecyclerView.ViewHolder {
+    public class ItemViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView textTitle;
         private TextView textDetail;
         private ImageView imageView;
         private CardView cardView;
 
-        public ItemViewHolder(@NonNull View itemView) {
+        OnItemListener mOnItemListener;
+
+        public ItemViewHolder(@NonNull View itemView, OnItemListener mOnItemListener) {
             super(itemView);
             this.textTitle = itemView.findViewById(R.id.textTitle);
             this.textDetail = itemView.findViewById(R.id.textDetail);
             this.imageView = itemView.findViewById(R.id.profile_image);
             this.cardView = itemView.findViewById(R.id.cardViewID);
+            this.mOnItemListener = mOnItemListener;
+        }
+
+        @Override
+        public void onClick(View view) {
+            mOnItemListener.OnItemClick(getAdapterPosition());
         }
     }
+
+    public interface OnItemListener {
+        void OnItemClick(int postition);
+    }
+
 }
 
 class Item {
@@ -97,4 +112,6 @@ class Item {
         this.detail = detail;
         this.image = image;
     }
+
+
 }
