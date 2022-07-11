@@ -1,0 +1,37 @@
+1. variable 'z' might no have been initialized
+2. cannot find symbols. symbols: variable k. location class Test.
+3. non-static variable x cannot be referenced from a static context
+4. 0 0
+5. non-static method testFunction2() cannot be referenced from static context
+6. non-static method testFunction2() cannot be referenced from static context
+7. 12
+8. 12
+9. A
+10. T T
+11. F T
+12. F T
+13. F F
+14. T T
+15. Java caches the Integer value in the range of -128 to 127. 
+Therefore, when two integer objects have the same value in 
+this range, the == comparator will return true because they refer to 
+the same object.
+16. F T
+17.  private 'abstract'  int i;
+ modifier abstract not allowed here
+18. ' public abstract void test() { }' abstract methods cannot have a body
+19. 
+20. 0
+21. super test ImpTest test
+22. i has private access in Test.AbstractTest
+23. C
+24. C
+25.  int i;  = expected
+26. 0
+27. <identifier> expected or  cannot assign a value to final variable i
+28. 0
+29. interface method cannot have private method and variable missing method body, or declare abstract
+30. interface method cannot have private method and variable missing method body, or declare abstract
+31. 0
+32. Super Imptest AbstractTest
+33.Super Imptest 
